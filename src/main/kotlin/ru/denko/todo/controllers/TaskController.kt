@@ -1,9 +1,11 @@
 package ru.denko.todo.controllers
 
+import io.swagger.v3.oas.annotations.tags.Tag
 import org.springframework.web.bind.annotation.*
 import ru.denko.todo.models.TaskModel
 import ru.denko.todo.services.TaskService
 
+@Tag(name = "Task")
 @RestController
 @RequestMapping(path = ["/task"])
 class TaskController(

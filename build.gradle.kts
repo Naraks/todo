@@ -30,6 +30,8 @@ dependencies {
 	implementation("org.liquibase:liquibase-core")
 
 	runtimeOnly("org.postgresql:postgresql")
+
+	implementation("org.springdoc:springdoc-openapi-ui:1.6.9")
 }
 
 tasks.withType<KotlinCompile> {
