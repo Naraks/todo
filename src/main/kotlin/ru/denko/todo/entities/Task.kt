@@ -25,7 +25,7 @@ class Task(
      * Полное описание задачи
      */
     @Column(name = "description", nullable = true, length = 2000)
-    var description: String,
+    var description: String?,
 
     /**
      * Дата создания
